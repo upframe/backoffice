@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Upframe Backend</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <button id="logout">Logout</button>
+
+  <div id="login">
+    <form>
+      <img src="/img/logo.svg">
+      <input type="password" name="password" placeholder="Waiting for you...">
+      <input type="submit" value="Let me f***ing enter">
+    </form>
+  </div>
+
+  <main>
+    <form id="email">
+      <h1>Send Email</h1>
+
+      <label>From</label>
+      <input required type="text" name="from_name" placeholder="Name">
+      <input required type="email" name="from_email" placeholder="Email">
+
+      <label>To <span>(XLSX file with two columns: name and email; no headers)</span></label>
+      <input required type="file" name="to" id="to">
+
+      <label>Subject</label>
+      <input required type="text" name="subject">
+
+      <label>Body <span>(Write in HTML format. Use {{ `{{ .Name }}` }} to display the user's name.)</label>
+      <textarea required name="body"></textarea>
+
+      <input required type="submit" value="Send">
+    </form>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+  <script src="/app.js"></script>
+  </body>
+  </html>

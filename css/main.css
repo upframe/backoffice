@@ -1,7 +1,24 @@
-@import "normalize.css/normalize.css";
+body {
+  font: 1em/1.6 'Roboto',sans-serif;
+  color:#4b5390;
+  margin: 0;
+  padding: 0;
+}
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 4em;
+  margin: 0;
+}
+
+main {
+  max-width: 600px;
+  width: 90%;
+  margin: 3em auto;
 }
 
 #login {
@@ -24,8 +41,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
-      box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
-      text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+  text-align: center;
 }
 
 #login form input {
@@ -37,14 +54,17 @@
   margin-bottom: 2em;
 }
 
-#login form input[type="password"] {
+textarea,
+input {
   margin: 0 0 .5em 0;
   padding: 0.5em;
   line-height: 1;
   border: 0;
-  background: #d9d9d9;
+  border: .1em solid #d9d9d9;
   border-radius: 2.5px;
   outline: none;
+  display: block;
+  width: 100%;
 }
 
 input[type="submit"],
@@ -62,4 +82,35 @@ button {
 input[type="submit"]:hover,
 button:hover {
   background: rgb(215,29,56);
+}
+
+label {
+  font-weight: bold;
+  margin: .5em 0 1em;
+  display: block;
+}
+
+label span {
+  font-weight: normal;
+  font-size: .8em;
+}
+
+#email input:nth-child(3),
+#email input:nth-child(4) {
+  width: 48%;
+  display: inline-block;
+}
+
+#email input:nth-child(4) {
+  float: right;
+}
+
+#email textarea {
+  min-height: 20em;
+}
+
+#logout {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
 }
