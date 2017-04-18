@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ .Title }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ .Site.BaseURL}}css/main.css">
+</head>
+
+<body>
+  <div id="login">
+    <form>
+      <img src="/img/logo.svg">
+      <input type="password" name="password" placeholder="Waiting for you...">
+      <input type="submit" value="Let me f***ing enter">
+    </form>
+  </div>
+
+  <nav>
+      <ul>
+          <li><a href="/"><img src="https://upframe.xyz/img/logo.svg"></a></li>
+          <li><i class="material-icons">exit_to_app</i></li>
+      </ul>
+  </nav>
+
+  <aside>
+      <ul>
+          <li><a href="/" alt="Home" title="Home"><i class="material-icons">home</i></a></li>
+          <li><a href="/" alt="Contacts" title="Contacts"><i class="material-icons">supervisor_account</i></a></li>
+          <li><a href="/" alt="Templates" title="Templates"><i class="material-icons">code</i></a></li>
+          <li><a href="/" alt="Emails" title="Emails"><i class="material-icons">email</i></a></li>
+      </ul>
+  </aside>

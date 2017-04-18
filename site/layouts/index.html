@@ -1,0 +1,57 @@
+{{ partial "header" . }}
+
+<header>
+    <div><h1>People</h1></div>
+    <div>
+      <button id="edit" alt="Edit" title="Edit"><i class="material-icons">mode_edit</i> Edit</button>
+      <button id="activate"><i class="material-icons">lens</i> Activate</button>
+      <button id="deactivate" alt="Deactivate" title="Deactivate"><i class="material-icons">blur_on</i> Deactivate</button>
+      <button id="add"><i class="material-icons">add</i> New</button>
+    </div>
+</header>
+
+<main>
+  <table>
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th></th>
+          </tr>
+      </thead>
+
+
+      <tr data-id="">
+          <td data-field="ID">1</td>
+          <td data-field="First Name">Malik</td>
+          <td data-field="Last Name">Piarali</td>
+          <td data-field="Email">malik@upframe.co</td>
+          <td><button class="edit"><i class="material-icons">mode_edit</i></button></td>
+      </tr>
+      <tr data-id="">
+          <td data-field="ID">2</td>
+          <td data-field="First Name">Henrique</td>
+          <td data-field="Last Name">Fialho</td>
+          <td data-field="Email">fialho@upframe.co</td>
+          <td><button class="edit"><i class="material-icons">mode_edit</i></button></td>
+      </tr>
+      <tr data-id="">
+          <td data-field="ID">3</td>
+          <td data-field="First Name">Fábio</td>
+          <td data-field="Last Name">Ferreira</td>
+          <td data-field="Email">fabio@upframe.co</td>
+          <td><button class="edit"><i class="material-icons">mode_edit</i></button></td>
+      </tr>
+
+  </table>
+
+</main>
+
+<form method="POST" id="editor" class="floating-box" data-link="/api/promocodes">
+    <h2><span id="new-text">New Person</span><span id="edit-text">Person #<span id="barID"></span></span><span id="expand">&#9660;</span></h2>
+
+</form>
+
+{{ partial "footer" . }}

@@ -1,0 +1,7 @@
+baseurl = "https://backoffice.upframe.co/"
+title = "Upframe Backoffice"
+languageCode = "en-us"
+uglyurls  = true
+enableRobotsTXT = true
+disableRSS = true
+disableSitemap = true
