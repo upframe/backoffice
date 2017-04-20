@@ -1,7 +1,7 @@
 'use strict'
 
 var apiURL = (() => {
-  if (window.location.hostname !== 'upframe.co') {
+  if (window.location.hostname !== 'backoffice.upframe.co') {
     return `http://${window.location.hostname}:3002`
   }
 
